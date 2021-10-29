@@ -36,9 +36,7 @@ $('.main-menu > li').mouseleave(function(){
 // 유튜브 플레이리스트
 function SliderBox2__init() {
   var swiper = new Swiper(".slider-box-2 .swiper-container", {
-    loop: true,
-    slidesPerView: 5,
-    slidesPerGroup: 5,
+    slidesPerView: 3.6,
     navigation: {
       nextEl: ".play-list .play-list__btn-next",
       prevEl: ".play-list .play-list__btn-prev"

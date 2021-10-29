@@ -1,4 +1,6 @@
 /* 폰트 */
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+
 @font-face {
   font-family: 'GROBOLD';
   font-style: normal;
@@ -46,53 +48,139 @@ body {
   overflow-x:hidden;
   width:100vw;
   height:100vh;
-  font-family: 'GROBOLD';
-  font-size:20px;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
 }
 
 /* 탑바 */
 .top-bar {
   height:120px;
-  border:1px solid red;
   background-color: #FFCF64;
+  font-family: 'GROBOLD';
+  font-size:24px;
 }
 
 .sub-menu {
   color:#fff;
-  text-shadow: 2px 2px 2px gray;
+  text-shadow: 3px 3px 2px rgba(48, 48, 48, 0.5);
 }
 
 .top-bar .logo {
   width:80px;
 }
 
-/* 홈 */
+/* 메인페이지-메인 배너 */
 .main-banner {
-  height:650px;
-  border:1px solid blue;
+  height:600px;
 }
 
-/* 서브페이지-아티스트 */
+/* 메인페이지-베스트 도넛 */
+.best-donut {
+  margin-left:40px;
+  margin-top:100px;
+  height:534px;
+}
 
+.best-donut > .title {  
+  font-family: 'GROBOLD';
+  font-size:24px;
+  margin-bottom: 40px;
+}
+
+.about-donut {
+  margin-top: -82px;
+  width: 470px;
+  height: 350px;
+  border: 1px solid red;
+}
+
+/* 메인페이지-랜디스 도넛 소개 */
+.randys-intro {
+  margin-top: 140px;
+  height: 1564px;
+}
+
+.randys-intro .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.randys-intro .content {
+  font-size: 18px;
+}
+
+/* 메인페이지-메뉴 박스 */
+.menu-box {
+  margin-top: 140px;
+}
+
+.menu-box > div > div {
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+}
+
+.menu-box > div > div:not(:last-child) {
+  margin-right:40px;
+}
+
+/* 메인페이지-띠 배너 */
+.band-banner {
+  margin-top: 140px;
+  height: 197px;
+  background-color: #FFCF64;
+}
+
+/* 메인페이지-인스타그램 */
+.insta {
+  margin-top: 140px;
+  height:574px;
+  border: 1px solid blue;
+}
+
+.insta > .title {  
+  font-family: 'GROBOLD';
+  font-size:24px;
+  margin-bottom: 40px;
+}
+
+.insta .section-1 {
+  margin-right: 32px;
+}
+
+.insta .section-2 > div > div:not(:last-child) {
+  margin-right: 33px;
+  margin-bottom: 33px;
+}
 /* 푸터 */
 .bottom-bar {
-  position: fixed;
-  z-index: 100;
-  width: 1920px;
-  height: 50px;
-  bottom: 0;
-  left: 0;
-  padding: 0 320px;
-  color:#fff;
+  margin-top: 200px;
 }
 
-.bottom-bar ul > li > a {
-  display: block;
-  margin-right: 30px;
+.moving {
+  height: 197px;
+  font-family: 'GROBOLD';
+  font-size: 90px;
+  text-shadow: 4px 4px 2px rgba(48, 48, 48, 0.5);
 }
 
-.sub-page__bottom-bar {
-  background-color: #081B2B;
-  position: inherit;
+.moving-1 {
+  background-color: #FFCF64;
+  color: #FF4E00;
+}
+
+.moving-2 {
+  background-color: #FF4E00;
+  color: #FFCF64;
+}
+
+.footer {
+  height: 100px;
+  background-color: #FF4E00;  
+  color: #fff;
+}
+
+.footer .content > li:not(:last-child)::after {
+  content: "　│";
+  margin-right:10px;
 }

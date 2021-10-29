@@ -32,23 +32,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
   <!-- 사이트 공통 JS -->
-  <script src="resource/common.js" defer></script>
+  <script src="js/common.js" defer></script>
 
   <!-- 사이트 공통 CSS -->
-  <link rel="stylesheet" href="resource/common.css">
+  <link rel="stylesheet" href="css/common.css">
 </head>
 
-<body class="<?=$pagecode == "home" ? "" : "bg__navy"?>">
-  <header class="top-bar relative <?=$pagecode == "home" ? "" : "sub-page__top-bar"?>">
+<body>
+  <header class="top-bar relative">
     <div class="wrap flex h-full">
       <ul class="main-menu site-wrap flex items-center justify-around">
-        <li class="sub-menu">BRAND</li>
-        <li class="sub-menu">MENU</li>
+        <li class="sub-menu"><a href="#">BRAND</a></li>
+        <li class="sub-menu"><a href="#">MENU</a></li>
         <li class="sub-menu">
           <img src="resource/img/logo.png" alt="로고" class="logo">
         </li>
-        <li class="sub-menu">STORE</li>
-        <li class="sub-menu">EVENT</li>
+        <li class="sub-menu"><a href="#">STORE</a></li>
+        <li class="sub-menu"><a href="#">EVENT</a></li>
       </ul>
     </div>
   </header>
